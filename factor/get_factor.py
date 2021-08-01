@@ -1,2 +1,8 @@
 def get_factor(num):
-    pass
+
+    factors = []
+    for i in range(num):
+        if not num % i:
+            factors.append(i)
+
+    return factors
