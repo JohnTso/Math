@@ -9,11 +9,11 @@ def get_gcf(*nums):
     4
     """
 
-    # 
+    #  Get the minimum number of nums
     m = min(nums)
     gcf = 1
 
-    #
+    # Iterate factors of the minimum number
     for i in get_factor(m):
         for n in nums:
             if n % i != 0:
@@ -21,4 +21,3 @@ def get_gcf(*nums):
         else:
             gcf = i
     return gcf
-

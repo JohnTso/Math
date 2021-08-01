@@ -22,4 +22,3 @@ def get_lcm(*nums):
         else:
             stop = True
             return lcm
-print(get_lcm(27,63))
