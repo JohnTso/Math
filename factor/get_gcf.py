@@ -4,13 +4,13 @@ from get_factor import get_factor
 def gcf(nums, show_all=False):
     """
     Given a list of numbers, return their greatest common factor or get common factor (GCF).
-    >>> gcf([2, 4])
+    >>> get_gcf([2, 4])
     2
-    >>> gcf([4, 16, 8])
+    >>> get_gcf([4, 16, 8])
     4
-    >>> gcf([4, 16, 8], show_all=True)
+    >>> get_gcf([4, 16, 8], show_all=True)
     [1, 2, 4]
-    >>> gcf([12, 24], True)
+    >>> get_gcf([12, 24], True)
     [1, 2, 3, 4, 6, 12]
     """
 
@@ -28,5 +28,3 @@ def gcf(nums, show_all=False):
 
     # if show_all is True, return a list of common factors, else the greatest common factor
     return gcf if show_all else gcf[-1] 
-
-print(gcf([12, 24]))
