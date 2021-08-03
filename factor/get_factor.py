@@ -6,9 +6,7 @@ def get_factor(num):
     >>> get_factor(12)
     [1, 2, 3, 4, 6, 12]
     """
-    factors = []
-    for i in range(1, num+1):
-        if not num % i:
-            factors.append(i)
-
+    # this list get all the factors of the num
+    factors = [i for i in range(1, num+1) if not num % i]
+    
     return factors
