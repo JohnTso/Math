@@ -25,11 +25,7 @@ def prime_factorization(num):
             factorization[i] = power   # it will save the prime factor & power to factorization, and reset power
             power = 0                  
     
-    result = []
-    
-    for i in factorization:     # this loop will turn factorization(dictionary) into a clear string result
-        result.append(f"{i}^{factorization[i]}")
+    # result = [f"{i}^{factorization[i]}" for i in factorization] 
+    # this for-loop will turn factorization(dictionary) into a clear string result
 
-    return " x ".join(result) , factorization # return result and factorization(dictionary)
-
-
+    return " x ".join([f"{i}^{factorization[i]}" for i in factorization]) , factorization # return result and factorization(dictionary)
