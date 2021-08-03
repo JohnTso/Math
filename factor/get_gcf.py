@@ -27,4 +27,4 @@ def get_gcf(nums, show_all=False):
             gcf.append(i)
 
     # if show_all is True, return a list of common factors, else the greatest common factor
-    return gcf if show_all else gcf[-1] 
+    return gcf if show_all else gcf[-1]

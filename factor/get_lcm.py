@@ -11,14 +11,21 @@ def get_lcm(nums):
     m = max(nums) # Get the maximum number of nums
     stop = False # This is for stopping while loop
     lcm = m   # Return the the final result
+
     def check_lcm(nums, lcm):
+
+        # This check_lcm function is for checking if it's the lcm
         for num in nums:
-            if lcm % num != 0:   # This check_lcm function is for checking if it's the lcm
+            if lcm % num != 0:   
                 return False
         return True
+
     while not stop:
-        if not check_lcm(nums, lcm):  # This while loop return lcm
+
+        # This while loop return lcm
+        if not check_lcm(nums, lcm):
             lcm += m
+
         else:
             stop = True
             return lcm
