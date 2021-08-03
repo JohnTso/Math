@@ -1,7 +1,7 @@
 from get_factor import get_factor
 
 # gcf stands for get common factor or greatest common factor
-def gcf(nums, show_all=False):
+def get_gcf(nums, show_all=False):
     """
     Given a list of numbers, return their greatest common factor or get common factor (GCF).
     >>> get_gcf([2, 4])
