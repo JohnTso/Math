@@ -4,11 +4,11 @@ def simplify_fraction(fraction):
     """
     Given a fraction, return the simplified fraction
     >>> simplify_fraction('10/100') 
-    10/100
+    '1/10'
     >>> simplify_fraction('2/4')
-    1/2
+    '1/2'
     >>> simplify_fraction('155000/1000000')
-    31/200
+    '31/200'
     """
     # this turn the fraction(input) into a list[numerator, denominator]
     nums = fraction.replace('/', ' ').split()
@@ -16,8 +16,6 @@ def simplify_fraction(fraction):
     
     # this will divide both numerator and denominator by their gcf value
     gcf = get_gcf(nums)
-    nums = [str(i // gcf) for i in nums]
+    nums = [str(i // gcf) for i in nums]    
 
-    # result = f'{nums[0]}/{nums[1]}'
-    # return result
-    return f'{nums[0]}/{nums[1]}'
+    return "/".join(nums)
