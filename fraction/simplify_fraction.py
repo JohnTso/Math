@@ -19,5 +19,4 @@ def simplify_fraction(fraction):
     # this will divide both numerator and denominator by their gcf value
     gcf = get_gcf(nums)
     nums = [str(i // gcf) for i in nums]    
-    print(nums)
     return "/".join(nums)
