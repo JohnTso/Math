@@ -32,4 +32,4 @@ def add_fraction(*fractions):
         result_num += numerators[i] * num
 
     # return the simplified fraction
-    return simplify_fraction(f"{result_num}/{result_deno}")
+    return simplify_fraction(f"{result_num}/{result_deno}") 
